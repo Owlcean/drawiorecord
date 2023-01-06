@@ -1,1 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2023-01-05T15:14:43.687Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.0" etag="kXLHlrj-jo00YGM5O_NM" type="github"><diagram id="0r3zZ4AqDe4N7Pk7zlYR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-06T07:59:03.186Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.0" etag="WrxuZsOTH_3BDyS0pGrf" type="github">
+  <diagram id="QuBxBVyg3yb5x31W8UEh" name="第 1 页">
+    <mxGraphModel dx="806" dy="2316" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="crWrlkVpCGIaqCY60VN8-1" value="实例化timeline prefab" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-2" value="playable director" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="140" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-3" value="new PlayableDirectorState(director)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="180" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-5" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="crWrlkVpCGIaqCY60VN8-3" target="crWrlkVpCGIaqCY60VN8-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="250" as="sourcePoint" />
+            <mxPoint x="480" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-6" value="PlayableAssetState" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-7" value="animancer has state?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-9" value="TimelinePlayer.Play()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-10" value="AnimancerNode" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-11" value="AnimancerLayer.Play()&lt;br&gt;AnimancerLayer.AddChild()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="127.5" y="350" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-12" value="AnimancerState.SetRoot()&lt;br&gt;AnimancerState.CreatePlayable()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="123.75" y="475" width="192.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-13" value="AnimancerNode" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="485" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-14" value="PlayerDirectorState.CreatePlayable()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="555" width="212.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-15" value="PlayableAssetState.CreatePlayable()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="640" width="212.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="crWrlkVpCGIaqCY60VN8-16" value="PlayableAssetState.InitializeBindings()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="730" width="212.5" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
