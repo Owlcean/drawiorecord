@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-18T07:10:45.765Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.3" etag="zqcpeDxOA6Kksp36URXd" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-18T08:06:33.485Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.3" etag="aBgBH_7Cf1wnNhlZICmM" type="github">
   <diagram id="ryMkTRirt44k3g-YlCe4" name="第 1 页">
     <mxGraphModel dx="806" dy="1091" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -30,6 +30,42 @@
         </mxCell>
         <mxCell id="87VkEc0FRvjfE5vBsGxS-10" value="Some logs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-7">
           <mxGeometry y="140" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-12" value="&lt;span style=&quot;text-align: left;&quot;&gt;RNUMainCore.OpenPageByBundle&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="630" y="330" width="500" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-13" value="InitInner //C注入，yoga代码预热" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-12">
+          <mxGeometry y="30" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-14" value="InitPageParentGo" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-12">
+          <mxGeometry y="60" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-15" value="根据调试/生产模式，生成对应JS引擎&amp;nbsp;ExperimentalQuickJSExecutor/QuickJSExecutor &amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-12">
+          <mxGeometry y="90" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-16" value="new ModuleManager //初始化RU模块，JSExecutor注入" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-12">
+          <mxGeometry y="120" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-17" value="load AssetBundle" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-12">
+          <mxGeometry y="150" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-18" value="JSExecutor.LoadApplicationScript" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-12">
+          <mxGeometry y="180" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-19" value="RunApplication" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-12">
+          <mxGeometry y="210" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-21" value="&lt;span style=&quot;text-align: left;&quot;&gt;load AssetBundle&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="630" y="600" width="500" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-22" value="[Win]pathPrefix:&quot;.\\Assets\\RNUAssetBundles\\win&quot;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-21">
+          <mxGeometry y="30" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-23" value="abFileName:&quot;&lt;b&gt;rnubundles&lt;/b&gt;&quot;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-21">
+          <mxGeometry y="60" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-24" value="AssetBundle.LoadFromFile(abPath)=&amp;gt;&lt;b&gt;RnuMainCore.assetBundle&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-21">
+          <mxGeometry y="90" width="500" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
