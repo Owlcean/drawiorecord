@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-19T09:10:47.219Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.3" etag="fEzlMaN22PSRXgNvUzuq" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-20T06:10:06.564Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.3" etag="-5JC97ofimGDzDE2pwAT" type="github">
   <diagram id="ryMkTRirt44k3g-YlCe4" name="第 1 页">
-    <mxGraphModel dx="1760" dy="1349" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1447" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -253,9 +253,6 @@
         <mxCell id="87VkEc0FRvjfE5vBsGxS-95" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-79">
           <mxGeometry x="70" y="290" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="87VkEc0FRvjfE5vBsGxS-82" value="assetbundle.LoadAsset" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="140" y="505" width="140" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="87VkEc0FRvjfE5vBsGxS-85" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="87VkEc0FRvjfE5vBsGxS-76" target="87VkEc0FRvjfE5vBsGxS-79">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="680" y="980" as="sourcePoint" />
@@ -267,6 +264,54 @@
         </mxCell>
         <mxCell id="87VkEc0FRvjfE5vBsGxS-93" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="345" y="1095" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-98" value="Unity" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="1200" width="420" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-99" value="RNUMainCore.SendUnityEventToJs(string eventName, string jsonMessage)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-98">
+          <mxGeometry y="30" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-100" value="JSExecutor.CallFunction(string moduleName, string methodName, ArrayList args)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-98">
+          <mxGeometry y="60" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-101" value="RNUNative.CallFunction(string moduleName, string methodName, IntPtr argsPtr)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-98">
+          <mxGeometry y="90" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-102" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-370.59" y="1330" as="sourcePoint" />
+            <mxPoint x="-370.59" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-104" value="JS(ReactUnity)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="1400" width="320" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-105" value="&lt;span style=&quot;color: rgb(28, 30, 33); font-family: &amp;quot;Optimistic Display&amp;quot;, system-ui, -apple-system, sans-serif; font-size: 17px; text-align: left;&quot;&gt;使用&lt;/span&gt;&lt;code style=&quot;box-sizing: border-box; vertical-align: initial; background-color: var(--ifm-code-background); border: 0.1rem solid rgba(0, 0, 0, 0); border-radius: var(--ifm-code-border-radius); font-family: var(--ifm-font-family-monospace); padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal); color: rgb(28, 30, 33); text-align: left; font-size: var(--ifm-code-font-size)  !important;&quot;&gt;DeviceEventEmitter.addListener&lt;/code&gt;&lt;span style=&quot;color: rgb(28, 30, 33); font-family: &amp;quot;Optimistic Display&amp;quot;, system-ui, -apple-system, sans-serif; font-size: 17px; text-align: left;&quot;&gt;&amp;nbsp;来监听消息&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-104">
+          <mxGeometry y="52.5" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-106" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-370.12999999999994" y="1530" as="sourcePoint" />
+            <mxPoint x="-370.12999999999994" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-108" value="Unity" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="1610" width="365" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-110" value="registered NativeModules" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-108">
+          <mxGeometry x="102.5" y="80" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-113" value="CallNativeModuleFromCpp(int moduleId, int methodId, int index)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="87VkEc0FRvjfE5vBsGxS-108">
+          <mxGeometry x="-2.5" y="50" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-112" value="featureModule" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="1635" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-115" value="dll" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="1345" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="87VkEc0FRvjfE5vBsGxS-116" value="dll" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="1545" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
