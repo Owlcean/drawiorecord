@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-14T09:46:52.814Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="6E8_ic_4sJX-tsOZKTi2" version="21.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-14T13:15:23.382Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Rqq8pBrTFIR4opQ4z2Lv" version="21.0.4" type="github">
   <diagram name="第 1 页" id="K05jFmEpUa6yexNYUmjU">
-    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,7 +23,7 @@
           <mxGeometry x="60" y="960" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cSzgPnBqxu63beRPkphZ-21" value="Converter&lt;br&gt;namespace Esperecyan.UniVRMExtensions.SwayingObjects" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="704" y="525" width="950" height="120" as="geometry" />
+          <mxGeometry x="260" y="-50" width="950" height="120" as="geometry" />
         </mxCell>
         <mxCell id="cSzgPnBqxu63beRPkphZ-22" value="SwayingObjectsConverterSetting:ConvertVrmSpringBonesOnly,ConvertVrmSpringBonesAndVrmSpringBoneColliderGroups,RemoveSwayingObjects," style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-21">
           <mxGeometry y="30" width="950" height="30" as="geometry" />
@@ -35,7 +35,7 @@
           <mxGeometry y="90" width="950" height="30" as="geometry" />
         </mxCell>
         <mxCell id="cSzgPnBqxu63beRPkphZ-25" value="Converter&lt;br style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;namespace Esperecyan.UniVRMExtensions.SwayingObjects&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="1">
-          <mxGeometry x="1000" y="660" width="410" height="310" as="geometry" />
+          <mxGeometry x="556" y="85" width="410" height="310" as="geometry" />
         </mxCell>
         <mxCell id="cSzgPnBqxu63beRPkphZ-26" value="传入source Animator&lt;br&gt;以及&lt;br&gt;dest Animator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-25">
           <mxGeometry x="145" y="60" width="120" height="60" as="geometry" />
@@ -69,6 +69,39 @@
         </mxCell>
         <mxCell id="cSzgPnBqxu63beRPkphZ-38" value="最后的IO相关逻辑" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="145" y="1550" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-39" value="VRM-&amp;gt;VRChat" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="480" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-40" value="实例化vrm prefab" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="570" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-41" value="获取vrm内的blendshape clip&lt;br&gt;VrmProxy-&amp;gt;bsAvatar-&amp;gt;bsclip" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="670" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-43" value="Converter工作流" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1225" y="780" width="300" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-44" value="GeometryCorrector&lt;br&gt;关于尺寸等的调整,根据肩高是否合规进行适当scale" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-43">
+          <mxGeometry y="30" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-45" value="BlendShapeReplacer&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;SetLipSync：设置对口型，viseme in smr&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;EnableEyeLook:设置眨眼bs(如果有)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;SetFeelings:新增VRCAvatarDescriptor，并预设好AnimationLayer,BlendTree等，如果vrm有预设的表情bs，可以直接映射，命名规范在MappingBlendShapeToVRChatAnim。&lt;br&gt;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-43">
+          <mxGeometry y="90" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-46" value="ComponentsReplacer&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;ConvertVRMFirstPerson:根据vrmfps的数据调整VRCDes的viewPos；&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;（如需要）移除不用的collider&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;VRMSpringBone-&amp;gt;VRCPhysBone" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-43">
+          <mxGeometry y="210" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-47" value="VRChatsBugsWorkaround&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;EnableAnimationOverride:如果相比humaniod骨骼有缺失，创建dummy bone以对应上&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;[optional]RemoveUpperChest&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;AddShouldersPositionYAndEyesPositionZ:肩膀&amp;amp;眼球的位置矫正(配置窗口可设置)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;EnableTextureMipmapStreaming：Avatar用到的texture的streamingMipmaps设置打开" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-43">
+          <mxGeometry y="290" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-49" value="RemoveBlockedComponents：移除白名单以外的组件" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-43">
+          <mxGeometry y="440" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-50" value="IO" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-43">
+          <mxGeometry y="490" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-51" value="[Quest]CalculateQuestVRCPhysBoneLimitations&lt;br&gt;如果超过了Quest的VRCPhysBone的限制的既定值的话警告消息，超过了硬限度的话错误消息返回。" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-43">
+          <mxGeometry y="540" width="300" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
