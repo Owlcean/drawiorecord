@@ -1,1 +1,76 @@
-<mxfile host="app.diagrams.net" modified="2023-03-13T07:14:42.417Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="21.0.4" etag="wPiBXz_pmOcEcbHgUvMo" type="github"><diagram name="第 1 页" id="K05jFmEpUa6yexNYUmjU">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-14T09:46:52.814Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="6E8_ic_4sJX-tsOZKTi2" version="21.0.4" type="github">
+  <diagram name="第 1 页" id="K05jFmEpUa6yexNYUmjU">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cSzgPnBqxu63beRPkphZ-10" value="VRChat-&amp;gt;VRM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="150" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-11" value="实例化go" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="585" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-12" value="移除go中inactive的transform以及disable掉的Component" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="670" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-13" value="取得VRChat的表情列表，key为表情枚举；value为字典，记载表情及对应权重信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="770" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-14" value="建立临时文件夹，&lt;br&gt;VRMInitializer.Initialize生成初始vrm信息，删除初始的VrmSpringBone" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="860" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-15" value="VRCPhysBone-&amp;gt;VrmSpringBone&lt;br&gt;借助Converter进行" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="960" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-21" value="Converter&lt;br&gt;namespace Esperecyan.UniVRMExtensions.SwayingObjects" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="704" y="525" width="950" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-22" value="SwayingObjectsConverterSetting:ConvertVrmSpringBonesOnly,ConvertVrmSpringBonesAndVrmSpringBoneColliderGroups,RemoveSwayingObjects," style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-21">
+          <mxGeometry y="30" width="950" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-23" value="OSCComponents:None,Blink" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-21">
+          <mxGeometry y="60" width="950" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-24" value="RequiredComponents:Animator VRMMeta VRMHumanoidDescription VRMFirstPerson" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-21">
+          <mxGeometry y="90" width="950" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-25" value="Converter&lt;br style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;namespace Esperecyan.UniVRMExtensions.SwayingObjects&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="660" width="410" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-26" value="传入source Animator&lt;br&gt;以及&lt;br&gt;dest Animator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-25">
+          <mxGeometry x="145" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-27" value="BoneMapper根据src Animator生成骨骼信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-25">
+          <mxGeometry x="140" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-28" value="生成secondary层级" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cSzgPnBqxu63beRPkphZ-25">
+          <mxGeometry x="140" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-29" value="DynamicBone-&amp;gt;VrmSpringBone&lt;br&gt;借助Converter进行" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="960" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-30" value="VRMNormalizer对go进行一次TPose处理" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1050" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-31" value="CombineMesh" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1120" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-34" value="处理skinmeshrenderer&lt;br&gt;划分为包含bs的mesh和不带bs的mesh" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1200" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-35" value="shader替换" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1290" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-36" value="&lt;div&gt;将GameObject网状物等作为资产保存(如果不作为资产存在就无法正常导出)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="1380" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-37" value="设置表情&lt;br&gt;将go对应smr的blendshapeavatar对应值设置上" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1460" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cSzgPnBqxu63beRPkphZ-38" value="最后的IO相关逻辑" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1550" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
