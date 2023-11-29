@@ -1,20 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T09:54:03.226Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="6vfoxC6HdbPCY_NZG1pH" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-29T06:56:19.370Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="f1eFFpOXOOrxTwfhj66Y" version="22.1.4" type="github">
   <diagram name="第 1 页" id="l_GkcDuePBD5FiNpogjj">
-    <mxGraphModel dx="1709" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="693" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BmWYOrbidce_TWZ4z-0n-1" value="CMPluginAPI&lt;br&gt;DLL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="290" width="120" height="60" as="geometry" />
+        <mxCell id="BmWYOrbidce_TWZ4z-0n-1" value="CMPluginAPI" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="310" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BmWYOrbidce_TWZ4z-0n-2" value="CMVRPN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="210" width="120" height="60" as="geometry" />
+        <mxCell id="BmWYOrbidce_TWZ4z-0n-2" value="VrpnImpl&lt;br&gt;or&lt;br&gt;LiveStreamImpl" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="310" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BmWYOrbidce_TWZ4z-0n-3" value="CMLiveStream" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="370" width="120" height="60" as="geometry" />
+        <mxCell id="BmWYOrbidce_TWZ4z-0n-3" value="CMLiveStream.dll" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="350" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BmWYOrbidce_TWZ4z-0n-4" value="CMCommonInterface" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="290" width="130" height="60" as="geometry" />
+        <mxCell id="BmWYOrbidce_TWZ4z-0n-4" value="CMPluginThreadManager" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="310" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pzUYfmljhvw_Ue1Yn6DV-2" value="CMVRPN.dll" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pzUYfmljhvw_Ue1Yn6DV-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BmWYOrbidce_TWZ4z-0n-4" target="BmWYOrbidce_TWZ4z-0n-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="470" as="sourcePoint" />
+            <mxPoint x="270" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pzUYfmljhvw_Ue1Yn6DV-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BmWYOrbidce_TWZ4z-0n-2" target="BmWYOrbidce_TWZ4z-0n-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="480" as="sourcePoint" />
+            <mxPoint x="510" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pzUYfmljhvw_Ue1Yn6DV-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BmWYOrbidce_TWZ4z-0n-1" target="pzUYfmljhvw_Ue1Yn6DV-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="300" as="sourcePoint" />
+            <mxPoint x="580" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pzUYfmljhvw_Ue1Yn6DV-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BmWYOrbidce_TWZ4z-0n-1" target="BmWYOrbidce_TWZ4z-0n-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="550" as="sourcePoint" />
+            <mxPoint x="510" y="500" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
